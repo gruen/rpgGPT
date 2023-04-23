@@ -1,6 +1,3 @@
-const OPENAI_API_KEY = '';
-console.error('Need to update OPENAI_API_KEY')
-
 function fixMissingBrace(str) {
   if (!str.includes('{')) {
     str = '{' + str;
