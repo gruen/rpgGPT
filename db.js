@@ -87,9 +87,9 @@ new Location("Occidarian Capital City Jail Storages", "Occidarian Capital City J
 new Location("Occidarian Capital City Jail Court Yard", "Occidarian Capital City Jail Court Yard is a monitored, enclosed space where inmates are permitted to gather for fresh air, exercise, and occasional social interactions under the watchful eyes of the guards.", ["Occidarian Capital City Jail", "Occidarian Capital City Jail Storages", "Occidarian Capital City Guard Tower"]);
 new Location("Occidarian Capital City Guard Tower", "Occidarian Capital City Guard Tower stands tall as a sentinel above the capital.", ["Occidarian Capital City Guards Quarters", "Occidarian Capital City Jail Court Yard"]);
   
-new Character("Sailor", "A sailor.", "Occidarian Capital City Bound Ship", null);
-new Character("Bard", "A master of numerous instruments, Eldric is best known for enchanting audiences with his intricate tales and clever limericks. His vast repertoire, spanning from legendary heroes to biting political satire, garners him a mix of admiration and disdain. Upon arriving in Occidarian Capital City was thrown in jail on suspicion of smuggling.", "Occidarian Capital City Bound Ship", null);
-new Character("Occidarian Guard", "A Occidarian guard.", "Occidarian Capital City Western Port", null);
+new Character("Sailor", "A sailor.", "Occidarian Capital City Bound Ship", getIconById(296));
+new Character("Bard", "A master of numerous instruments, Eldric is best known for enchanting audiences with his intricate tales and clever limericks. His vast repertoire, spanning from legendary heroes to biting political satire, garners him a mix of admiration and disdain. Upon arriving in Occidarian Capital City was thrown in jail on suspicion of smuggling.", "Occidarian Capital City Bound Ship", getIconById(47));
+new Character("Occidarian Guard", "A Occidarian guard.", "Occidarian Capital City Western Port", getIconById(222));
 
 new Character("Warden Aldous", "The stern and unyielding warden of Occidarian Capital City Jail, Aldous is responsible for maintaining order and overseeing the prisoners. He is a tall, muscular man with graying hair and a stern expression, commanding respect from his subordinates.", "Occidarian Capital City Jail");
 new Character("Jailer Gruff", "A grizzled veteran of the Occidarian Capital City Guard, Jailer Gruff is responsible for managing the day-to-day operations within the jail. He's known for his no-nonsense attitude and is rarely seen without his heavy iron keyring dangling from his belt.", "Occidarian Capital City Jail");
