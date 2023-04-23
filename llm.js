@@ -47,6 +47,7 @@ async function _executeOnLLM(llmMessages, retries = 3) {
   }
 
   const content = fixMissingBrace((await response.json()).choices[0].message.content.trim());
+  //.usage.total_tokens
 
   if (isValidJSON(content)) {
     return JSON.parse(content);
@@ -54,7 +55,7 @@ async function _executeOnLLM(llmMessages, retries = 3) {
 
   console.error('Invalid JSON:', content);
 
-  if (retries > 0) {
+  if (retries -1 > 0) {
     return _executeOnLLM(llmMessages, retries - 1);
   }
 
@@ -74,7 +75,8 @@ async function getPlayerName(playerMessage) {
     { role: 'assistant', content: '{ "player_name": "Mysterious Traveler" }' },
     { role: 'user', content: 'Call me Zhao Huang' },
     { role: 'assistant', content: '{ "player_name": "Zhao Huang" }' },
-    convertToLLMMessage(playerMessage),
+    { role: 'user', content: playerMessage.message },
+    
   ];
   const data = await _executeOnLLM(messages)
   if (data){
@@ -89,7 +91,12 @@ function convertToLLMMessage(message) {
   if (message.type === 'player') {
     llmMessage = {
       role: 'user',
-      content: message.message
+      content: JSON.stringify({
+        type: message.type,
+        message: message.message,
+        action: message.action,
+        trigger: message.triggers,
+      })
     };
   } else if (message.type === 'game') {
     llmMessage = {
@@ -106,19 +113,16 @@ function convertToLLMMessage(message) {
       content: JSON.stringify({
         type: message.type,
         character: message.character,
-        message: message.message
+        message: message.message,
+        action: message.action,
       })
     };
   } else if (message.type === 'system') {
     llmMessage = {
       role: 'system',
-      content: JSON.stringify({
-        type: message.type,
-        message: message.message
-      })
+      content: message.message,
     };
   }
 
   return llmMessage;
 }
-

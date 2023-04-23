@@ -1,0 +1,12 @@
+Current Location: Occidarian Capital City Jail
+Current Location Description: Occidarian Capital City Jail is a formidable, heavily fortified structure that houses wrongdoers and criminals, ensuring order and safety within the capital city.
+Neighbouring Locations: Occidarian Capital City Guards Quarters, Occidarian Capital City Jail Court Yard,  Occidarian Capital City Jail Storages, Occidarian Capital City Sewers, Markets Alley Way
+
+Player Name: 
+Player Backstory: A mysterious traveler new to Occidaria. Upon arriving in Occidarian Capital City was thrown in jail on suspicion of smuggling. 
+
+Character Name: Eldric the Bard
+Character Backstory: Eldric the Bard, a master of numerous instruments, is best known for enchanting audiences with his intricate tales and clever limericks.
+His vast repertoire, spanning from legendary heroes to biting political satire, garners him a mix of admiration and disdain. Upon arriving in Occidarian Capital City was thrown in jail on suspicion of smuggling.
+
+

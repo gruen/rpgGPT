@@ -67,7 +67,7 @@ body, html {
     justify-content: center;
 }
 
-.game-message {
+.game-message .action-message {
     display: inline-block;
     font-style: italic;
     color: #777;
@@ -78,8 +78,8 @@ body, html {
 
 .user-icon {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     margin-right: 5px;
 }
 
@@ -154,4 +154,114 @@ input[type="text"]:disabled {
   background-color: #ccc;
   color: #999;
   cursor: not-allowed;
+}
+
+.actions-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.actions-buttons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.actions-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.actions-buttons button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.actions-buttons button:disabled:hover {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.action-icon {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+}
+
+.actions-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    margin-top: 0;
+}
+
+.fight-container, .items-container, .target-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.actions-container > div {
+    display: none;
+}
+
+.actions-container > div[hidden] {
+    display: none !important;
+}
+
+.actions-container button {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    flex-basis: calc(50% - 10px);
+}
+
+.actions-container button:hover {
+    background-color: #c9302c;
+}
+
+.actions-container button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.actions-container button:disabled:hover {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.negative-effect {
+    display: inline-block;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+  
+.positive-effect {
+    display: inline-block;
+    font-style: italic;
+    color: green;
+    text-align: center;
+    width: 100%;
 }
