@@ -1,4 +1,5 @@
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = '';
+console.error('Need to update OPENAI_API_KEY')
 
 function fixMissingBrace(str) {
   if (!str.includes('{')) {
