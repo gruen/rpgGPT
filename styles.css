@@ -1,0 +1,157 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.chat-container {
+    width: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto 0 auto;
+    font-family: Arial, sans-serif;
+    max-height: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+.header {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.health, .money {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: calc(100% - 32px - 20%);
+    min-height: 66.67vh;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-center {
+    justify-content: center;
+}
+
+.game-message-container {
+    justify-content: center;
+}
+
+.game-message {
+    display: inline-block;
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    width: 100%;
+}
+
+
+.user-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-message {
+    display: block;
+    word-wrap: break-word;
+}
+
+.game-message {
+    display: inline-block;
+    font-style: italic;
+    color: #777;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    padding: 5px 10px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+  }
+
+button:disabled:hover {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+  }
+
+input[type="text"]:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
